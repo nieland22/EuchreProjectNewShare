@@ -143,6 +143,62 @@
             android:layout_height="wrap_content"
             android:text="Quit" />
 
+        <RelativeLayout
+            android:id="@+id/cardLinearLayout"
+            android:layout_width="600dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:layout_x="500dp"
+            android:layout_y="500dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/kingdiamonds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/ninediamonds"
+                android:layout_toRightOf="@id/ninediamonds"
+                android:adjustViewBounds="true"
+                android:translationX="10dp"
+                app:srcCompat="@drawable/king_d" />
+
+            <ImageView
+                android:id="@+id/ninediamonds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/jackspades"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:translationX="-110dp"
+                app:srcCompat="@drawable/nine_d" />
+
+            <ImageView
+                android:id="@+id/jackspades"
+                android:layout_width="550dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/aceclubs"
+                android:adjustViewBounds="true"
+                android:translationX="-230dp"
+                app:srcCompat="@drawable/jack_s" />
+
+            <ImageView
+                android:id="@+id/aceclubs"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/acehearts"
+                android:adjustViewBounds="true"
+                android:translationX="-100dp"
+                app:srcCompat="@drawable/ace_c" />
+
+            <ImageView
+                android:id="@+id/acehearts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/ace_h" />
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="1150dp"
             android:layout_height="match_parent"
